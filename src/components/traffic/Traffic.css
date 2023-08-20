@@ -1,0 +1,59 @@
+.traffic h3 {
+    color: black;
+    font-weight: var(--fw-700);
+}
+
+.traffic .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.traffic .controls .pagination-buttons {
+    box-shadow: none;
+}
+
+.traffic .controls .pagination-buttons button {
+    width: 80px;
+    color: #2f2f2f
+}
+
+.traffic .controls .pagination-buttons .active {
+    background: #f0f0f0;
+}
+
+.traffic-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.traffic-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 10px 0;
+    /* margin: 5px; */
+    position: relative;
+}
+
+.data-text {
+    padding-left: 10px;
+}
+
+.traffic-card .bg-color-div {
+    position: absolute;
+    z-index: -1;
+    padding: 15px;
+    border-radius: var(--radius-5);
+    background-color: #fff5c2;
+}
+
+.traffic .nav-btn{
+    width: 15rem !important;
+    color: black;
+    background: #f0f0f0;
+}

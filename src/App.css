@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+
+  /**
+   * colors
+   */
+  --primary: rgba(254, 213, 0, 255);
+  --medium-slate-blue: hsl(240, 73%, 65%);
+  --space-cadet_10: hsl(226, 54%, 26%, 0.1);
+  --space-cadet: hsl(226, 54%, 26%);
+  --ghost-white: hsl(227, 69%, 97%);
+  --cool-gray: hsl(226, 19%, 63%);
+  --cultured: hsl(0, 0%, 95%);
+  --white: hsl(0, 0%, 100%);
+
+  --fs-1: 3rem;
+  --fs-2: 2.4rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.2rem;
+
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  /**
+   * shadow
+   */
+
+  --shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.15);
+
+  /**
+   * radius
+   */
+
+  --radius-5: 5px;
+  --radius-15: 15px;
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 1s ease;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span,
+data {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+table,
+tbody,
+tr,
+th,
+td {
+  all: unset;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--white);
+  font-size: 1.6rem;
+  padding-inline: 15px;
+  min-height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance-card,
+.chart-card {
+  padding: 20px;
+  border-radius: var(--radius-15);
+}
+
+.text {
+  font-size: var(--fs-3);
+}

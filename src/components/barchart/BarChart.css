@@ -1,0 +1,205 @@
+.chart-container {
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 10rem;
+}
+
+.balance-card .text {
+    font-weight: unset;
+    margin-block-end: 5px;
+}
+
+.balance-card .h2 {
+    font-weight: var(--fw-700);
+}
+
+.chart-card {
+    position: relative;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.chart-card .h2 {
+    color: black;
+    font-weight: var(--fw-700);
+    font-size: var(--fs-2);
+}
+
+.chart-card .p-text {
+    color: black;
+    margin-block-end: 50px;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-3);
+}
+
+.chart-card .card-table {
+    display: block;
+    padding-block-end: 24px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.card-table::-webkit-scrollbar {
+    height:5px;
+    border-radius: 5px;
+}
+
+.card-table::-webkit-scrollbar-thumb {
+    background-color: #7775;
+    border-radius: 5px;
+}
+
+.card-table::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+    border-radius: 5px;
+}
+
+.card-table::-webkit-scrollbar-track {
+    background-color: #5555;
+    border-radius: 5px;
+}
+
+.card-table::-webkit-scrollbar-track:hover {
+    background-color: var(--cultured);
+    border-radius: 5px;
+}
+
+.chart-card .table-body {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.chart-card .table-row {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+    min-height: calc(180px + 31px);
+    margin-right: auto;
+}
+
+.chart-card .table-heading {
+    color: var(--space-cadet);
+    font-family: var(--ff-helvetica);
+    font-size: var(--fs-4);
+}
+
+.chart-card .table-data {
+    min-width: 15px;
+    height: 100%;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.chart-card .chart-bar {
+    background-color: var(--primary);
+    height: 100%;
+    transform-origin: bottom;
+    transition: transform var(--transition-2);
+
+    border-radius: 5px;
+}
+
+
+.chart-card .chart-bar:hover {
+    opacity: 0.75;
+}
+
+.tooltip {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    color: black;
+    font-weight: var(--fw-400);
+    padding: 8px;
+    border: 1px solid var(--cultured);
+    border-radius: var(--radius-5);
+    box-shadow: var(--shadow);
+    pointer-events: none;
+    opacity: 0;
+    transition: var(--transition-1);
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 6px;
+    font-size: var(--fs-3);
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: -12.5%;
+    left: 32%;
+    border-top: 20px solid var(--white);
+    z-index: -1;
+}
+
+.tooltip.active {
+    opacity: 1;
+}
+
+.text-info {
+    color: #9b9b9b;
+    text-transform: capitalize;
+    font-weight: var(--fw-500);
+    font-size: var(--fs-4);
+}
+
+.chart-card .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.chart-card .meta-value {
+    color: var(--space-cadet);
+    font-weight: var(--fw-500);
+    margin-block-start: 5px;
+}
+
+.chart-card .meta-value:not(.small) {
+    font-size: var(--fs-1);
+}
+
+.chart-card .card-meta:last-child {
+    align-self: flex-end;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        width: 98%;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    :root {
+        --fs-1: 4.8rem;
+        --fs-2: 3.2rem;
+        --fs-3: 1.8rem;
+        --fs-4: 1.5rem;
+    }
+
+    .chart-card {
+        padding: 30px 40px;
+    }
+
+    .chart-card .meta-value.small {
+        font-size: 2rem;
+    }
+
+    .chart-card .table-data {
+        width: 20px;
+    }
+
+}
+
+.horizontal-lines {
+    z-index: -1;
+    background: repeating-linear-gradient(var(--white), var(--white) 19px, var(--cultured) 1px, var(--white) 20px)
+}

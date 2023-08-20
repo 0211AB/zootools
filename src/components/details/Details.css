@@ -1,0 +1,53 @@
+.details-box {
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.location {
+    width: calc(50% - 10px);
+    border-radius: var(--radius-15);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.traffic {
+    width: calc(50% - 10px);
+    border-radius: var(--radius-15);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+}
+
+.leaderboard {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    border-radius: var(--radius-15);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.behaviour {
+    width: calc(50% - 10px);
+    border-radius: var(--radius-15);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+@media (max-width: 1000px) {
+    .behaviour,.location,.traffic,.leaderboard {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .details-box{
+        width: 100%;
+    }
+    
+    
+}

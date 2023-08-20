@@ -1,0 +1,52 @@
+.leaderboard h3 {
+    color: black;
+    font-weight: var(--fw-700);
+    margin-bottom: 20px;
+}
+
+.leaderboard button{
+    width:15rem !important;
+    color:black;
+    background: #f0f0f0;
+}
+
+.leaderboard .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leaderboard .controls .pagination-buttons {
+    box-shadow: none;
+}
+
+.leaderboard .controls .pagination-buttons button {
+    width: 80px;
+    color: #2f2f2f
+}
+
+.leaderboard .controls .pagination-buttons .active {
+    background: #f0f0f0;
+}
+
+.lb-table {
+    display: flex;
+    gap:2px
+}
+
+.emails {
+    flex-grow: 4;
+}
+
+.emails h4,
+.friends h4,
+.country h4 {
+    font-weight: var(--fw-400);
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+
+.friends,
+.country {
+    flex-grow: 2;
+}

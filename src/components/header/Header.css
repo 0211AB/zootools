@@ -1,0 +1,66 @@
+.header {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.header .flex {
+    display: flex;
+    margin:3rem 0;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 0rem;
+}
+
+.header .flex .logo {
+    font-size: var(--fs-2);
+    font-weight: var(--fw-500);
+    color: black;
+    text-decoration: none;
+}
+
+.page-btn {
+    background: var(--white);
+    border:none;
+    color: #646a75;
+    height: 30px;
+    font-weight: var(--fw-700);
+    transition: background 0.3s ease;
+    border-radius: var(--radius-5);
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.page-btn:first-of-type {
+    margin-left: 0;
+}
+
+.page-btn:last-of-type {
+    margin-right: 0;
+}
+
+.page-btn:not([class$="-page"]) {
+    width: 45px;
+}
+
+.pagination-buttons {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 3px 0px;
+    padding:0.5rem 1rem;
+    border-radius: var(--radius-5);
+}
+
+
+.page-btn.active {
+    background: #e2e3e8;
+}
+
+@media (max-width: 768px) {
+    .header .flex {
+        flex-direction: column;
+    }
+}
